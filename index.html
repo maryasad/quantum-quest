@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Quest: Particle Playground</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="game-header">
+            <h1>Quantum Quest</h1>
+            <div id="quantum-stats">
+                <span>Quantum State: <span id="state-display">Undefined</span></span>
+                <span>Probability: <span id="probability-display">0%</span></span>
+            </div>
+        </div>
+        <canvas id="quantum-canvas"></canvas>
+        <div id="game-controls">
+            <button id="superposition-btn">Superposition</button>
+            <button id="tunnel-btn">Quantum Tunnel</button>
+            <button id="entangle-btn">Entangle</button>
+        </div>
+        <div id="tutorial-overlay" class="hidden">
+            <h2>Quantum Mechanics Tutorial</h2>
+            <p id="tutorial-text">Welcome to the quantum realm!</p>
+            <button id="tutorial-next">Next</button>
+        </div>
+    </div>
+    <script src="src/quantum-physics.js"></script>
+    <script src="src/game-mechanics.js"></script>
+    <script src="src/particle-system.js"></script>
+    <script src="src/main.js"></script>
+</body>
+</html>

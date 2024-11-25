@@ -1,0 +1,68 @@
+:root {
+    --quantum-blue: #4A90E2;
+    --quantum-purple: #9C27B0;
+    --background-dark: #1A1A2E;
+    --text-light: #E0E0E0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-dark);
+    color: var(--text-light);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#game-container {
+    text-align: center;
+    background-color: rgba(26, 26, 46, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(74, 144, 226, 0.3);
+}
+
+#quantum-canvas {
+    border: 2px solid var(--quantum-blue);
+    background: linear-gradient(45deg, #1A1A2E, #16213E);
+    max-width: 100%;
+}
+
+#game-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+button {
+    background-color: var(--quantum-blue);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--quantum-purple);
+    transform: scale(1.05);
+}
+
+#tutorial-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(26, 26, 46, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
